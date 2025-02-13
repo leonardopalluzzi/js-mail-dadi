@@ -11,18 +11,12 @@ let flag = false;
 // user input
 const userEmail = prompt('Type your email adress here');
 
-// list check
-for (let i = 0; i < emailList.length; i++){
-    if (userEmail == emailList[i]){
-        flag = true;
-    }
-}
+// list check and result print
 
-if (flag == true){
+if (emailList.includes(userEmail)){
     alert('your email is present inside the list');
 } else {
     alert('your email is not present inside the list');
 }
 
 location.reload();
-// print result
