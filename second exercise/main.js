@@ -4,9 +4,22 @@ Prima di partire a scrivere codice poniamoci qualche domanda per individuare gli
 
 // variables and data structure
 const dice = [1, 2, 3, 4, 5, 6];
-let userNumber;
-let pcNumber;
 
 // random number generators
+const userIndex = Math.floor(Math.random() * dice.length);
+const pcIndex = Math.floor(Math.random() * dice.length);
+const userNumber = dice[userIndex];
+const pcNumber = dice[pcIndex];
+
+console.log(userNumber, pcNumber);
 
 // print result
+if (userNumber > pcNumber){
+    alert(`HAI VINTO! il tuo numero e ${userNumber} e quello del tuo avversatio ${pcNumber}`)
+} else if (pcNumber > userNumber) {
+    alert(`HAI PERSO :( il tuo numero e ${userNumber} e quello del tuo avversario e ${pcNumber}`)
+} else {
+    alert(`ABBIAMO UN PAREGGIO! i vostri numeri sono entrambi ${userNumber}`)
+}
+
+location.reload();
