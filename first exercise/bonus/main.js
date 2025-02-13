@@ -7,9 +7,11 @@ eh si!  Basta ragionare un po’.*/
 
 // variables and data structures
 const emailList = ['user1@gmail.com', 'user2@gmail.com', 'user3@gmail.com', 'user4@hotmail.it', 'user5@yandex.com'];
-let flag = false;
+console.log(emailList);
+
 // user input
 const userEmail = prompt('Type your email adress here');
+console.log(userEmail);
 
 // list check and result print
 
