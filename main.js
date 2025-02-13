@@ -7,17 +7,22 @@ eh si!  Basta ragionare un po’.*/
 
 // variables and data structures
 const emailList = ['user1@gmail.com', 'user2@gmail.com', 'user3@gmail.com', 'user4@hotmail.it', 'user5@yandex.com'];
-
+let flag = false;
 // user input
 const userEmail = prompt('Type your email adress here');
 
 // list check
 for (let i = 0; i < emailList.length; i++){
     if (userEmail == emailList[i]){
-        alert('your email is present in the list');
-    } else {
-        alert('your email is not present in the list');
+        flag = true;
     }
 }
 
+if (flag == true){
+    alert('your email is present inside the list');
+} else {
+    alert('your email is not present inside the list');
+}
+
+location.reload();
 // print result
